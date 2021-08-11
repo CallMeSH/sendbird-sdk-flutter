@@ -76,8 +76,8 @@ K _$enumDecode<K, V>(
 
 const _$MemberStateFilterEnumMap = {
   MemberStateFilter.all: 'all',
-  MemberStateFilter.invited: 'invited',
-  MemberStateFilter.joined: 'joined',
+  MemberStateFilter.invited: 'invited_only',
+  MemberStateFilter.joined: 'joined_only',
   MemberStateFilter.invitedByFriend: 'invited_by_friend',
   MemberStateFilter.invitedByNonFriend: 'invited_by_non_friend',
 };
