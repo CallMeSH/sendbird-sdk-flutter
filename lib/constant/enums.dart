@@ -59,8 +59,10 @@ enum MemberState { none, invited, joined }
 enum MemberStateFilter {
   all,
 
+  @JsonValue('invited_only')
   invited,
 
+  @JsonValue('joined_only')
   joined,
 
   @JsonValue('invited_by_friend')
@@ -72,8 +74,8 @@ enum MemberStateFilter {
 
 const memberStateFilterEnumMap = <MemberStateFilter, String>{
   MemberStateFilter.all: 'all',
-  MemberStateFilter.invited: 'invited',
-  MemberStateFilter.joined: 'joined',
+  MemberStateFilter.invited: 'invited_only',
+  MemberStateFilter.joined: 'joined_only',
   MemberStateFilter.invitedByFriend: 'invited_by_friend',
   MemberStateFilter.invitedByNonFriend: 'invited_by_non_friend',
 };
