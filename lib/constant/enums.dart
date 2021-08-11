@@ -59,8 +59,10 @@ enum MemberState { none, invited, joined }
 enum MemberStateFilter {
   all,
 
+  @JsonValue('invited_only')
   invited,
 
+  @JsonValue('joined_only')
   joined,
 
   @JsonValue('invited_by_friend')
